@@ -1,0 +1,16 @@
+---
+
+services :
+
+  sr.augustus_inflector.helper:
+    class : SR\Augustus\InflectorBundle\Helper\InflectionHelper
+
+  sr.augustus_inflector.twig_extension:
+    class     : SR\Augustus\InflectorBundle\Twig\InflectionExtension
+    public    : false
+    arguments :
+      - "@sr.augustus_inflector.helper"
+    tags   :
+      - { name : twig.extension }
+
+...

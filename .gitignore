@@ -1,0 +1,38 @@
+
+##
+# This file is part of the `src-run/augustus-inflector-bundle` project.
+#
+# (c) Rob Frawley 2nd <rmf@src.run>
+#
+# For the full copyright and license information, view the LICENSE.md
+# file distributed with this source code.
+##
+
+# symfony 2 cache/log paths
+/app/cache/*
+/app/logs/*
+!app/cache/.gitkeep
+!app/logs/.gitkeep
+
+# symfony 3 cache/log paths
+/var/cache/*
+/var/logs/*
+!var/cache/.gitkeep
+!var/logs/.gitkeep
+
+# composer-provided files
+/app/bootstrap.php.cache
+/var/bootstrap.php.cache
+/vendor/
+/composer.lock
+/composer
+/composer.phar
+
+# build-script generated files
+/var/build/*
+!var/build/.gitkeep
+
+# ide project files
+/.idea/
+
+# EOF

@@ -1,0 +1,20 @@
+---
+
+##
+# This file is part of the `src-run/augustus-inflector-bundle` project.
+#
+# (c) Rob Frawley 2nd <rmf@src.run>
+#
+# For the full copyright and license information, view the LICENSE.md
+# file distributed with this source code.
+##
+
+imports:
+    - { resource: ../../../.run/testers/symfony/config/base.yml }
+    - { resource: ../../../.run/testers/symfony/config/framework.yml }
+    - { resource: ../../../.run/testers/symfony/config/security.yml }
+
+augustus_inflector:
+  enabled : true
+
+...
